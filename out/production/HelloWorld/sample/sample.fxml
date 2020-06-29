@@ -1,43 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
-<?import java.lang.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
+<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
-      prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="sample.Controller">
-    <children>
-        <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                  minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0">
+<SplitPane dividerPositions="0.40954773869346733" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="138.0" prefWidth="598.0">
             <children>
-                <ImageView fx:id="main_image" fitHeight="384.0" fitWidth="603.0" pickOnBounds="true"
-                           preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER"
-                           GridPane.rowIndex="1" GridPane.valignment="CENTER"/>
-                <Button fx:id="anterior" onAction="#anterior" mnemonicParsing="false" text="Anterior"
-                        GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER"/>
-                <Button fx:id="siguiente" onAction="#siguiente" mnemonicParsing="false" text="Siguiente"
-                        GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2"
-                        GridPane.valignment="CENTER"/>
-                <Label fx:id="tema" text="Dominicio a utilizar" GridPane.columnIndex="1" GridPane.halignment="CENTER"
-                       GridPane.valignment="CENTER">
+                <Label layoutX="379.0" layoutY="40.0" text="Bienvenido!">
                     <font>
-                        <Font name="Arial Bold" size="23.0"/>
+                        <Font name="Arial Black" size="22.0" />
+                    </font>
+                </Label>
+                <Label layoutX="211.0" layoutY="148.0" text="Aqui veras un ejemplo didactico de como implementar el MEF!">
+                    <font>
+                        <Font name="Arial Bold" size="16.0" />
                     </font>
                 </Label>
             </children>
-            <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="100.0"/>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="607.0" minWidth="10.0" prefWidth="607.0"/>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.0" minWidth="10.0" prefWidth="98.0"/>
-            </columnConstraints>
-            <rowConstraints>
-                <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES"/>
-                <RowConstraints maxHeight="389.0" minHeight="10.0" prefHeight="387.0" vgrow="SOMETIMES"/>
-                <RowConstraints maxHeight="157.0" minHeight="0.0" prefHeight="111.0" vgrow="SOMETIMES"/>
-            </rowConstraints>
-        </GridPane>
-    </children>
-</VBox>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="202.0" prefWidth="598.0">
+            <children>
+                <Button layoutX="381.0" layoutY="159.0" mnemonicParsing="false" onAction="#empezar" text="Empecemos!">
+                    <font>
+                        <Font name="Arial Bold" size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>
