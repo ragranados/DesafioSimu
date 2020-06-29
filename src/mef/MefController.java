@@ -88,17 +88,8 @@ public class MefController implements Initializable {
         titulos.add("Paso 2");
         tema.setText(titulos.get(current));
 
-        imagenes.add(new Image("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/paso2.1.png?token=AI32UN7JX2DSEHVLUM6PKLC7ALMXM"));
+        imagenes.add(new Image("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/paso2.png?token=AI32UN5UDR754OPB236BSES7ALN2K"));
         main_image.setImage(imagenes.get(current));
-
-        explicaciones.add("Luego, expresamos en forma matricial");
-
-        titulos.add("Paso 2");
-        tema.setText(titulos.get(current));
-
-        imagenes.add(new Image("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/paso2.1.png?token=AI32UN7JX2DSEHVLUM6PKLC7ALMXM"));
-        main_image.setImage(imagenes.get(current));
-
 
     }
 
