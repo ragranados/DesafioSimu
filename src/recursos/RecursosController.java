@@ -27,6 +27,7 @@ public class RecursosController implements Initializable {
     public Label tema;
     ArrayList<Image> imagenes = new ArrayList();
     ArrayList<String> titulos = new ArrayList();
+    ArrayList<String> urlImagenes = new ArrayList();
     int current = 0;
 
     public void cerrarVentana() {
@@ -73,6 +74,10 @@ public class RecursosController implements Initializable {
     }
 
     public void change() {
+        /*if( current > imagenes.size() - 1 ){
+            imagenes.add(new Image(urlImagenes.get(current)));
+        }*/
+
         tema.setText(titulos.get(current));
         main_image.setImage(imagenes.get(current));
     }
@@ -82,25 +87,33 @@ public class RecursosController implements Initializable {
         tema.setText(titulos.get(current));
 
         titulos.add("Malla a utilizar");
-        tema.setText(titulos.get(current));
+        //tema.setText(titulos.get(current));
 
         titulos.add("Tabla de conectividades");
-        tema.setText(titulos.get(current));
+        //tema.setText(titulos.get(current));
 
         titulos.add("Malla a utilizar");
-        tema.setText(titulos.get(current));
+        //tema.setText(titulos.get(current));
 
-        imagenes.add(new Image("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/dominio.png?token=AI32UN54UXED7C32KDW3O6C7AJ576"));
+        /*urlImagenes.add("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/dominio.png?token=AI32UN54UXED7C32KDW3O6C7AJ576");
+
+        urlImagenes.add("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/malla.png?token=AI32UN36EOYYAQ4VS3W35WC7AKAEE");
+
+        urlImagenes.add("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/tabla.png?token=AI32UN32ZUZGRCREWG7HNF27AKI76");
+
+        urlImagenes.add("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/modelo.png?token=AI32UN2S5PMY4BDQMCWW7TC7AKI52");*/
+
+        imagenes.add(new Image("/assets/dominio.png"));
         main_image.setImage(imagenes.get(current));
 
-        imagenes.add(new Image("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/malla.png?token=AI32UN36EOYYAQ4VS3W35WC7AKAEE"));
-        main_image.setImage(imagenes.get(current));
+        imagenes.add(new Image("/assets/malla.png"));
+        //main_image.setImage(imagenes.get(current));
 
-        imagenes.add(new Image("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/tabla.png?token=AI32UN32ZUZGRCREWG7HNF27AKI76"));
-        main_image.setImage(imagenes.get(current));
+        imagenes.add(new Image("/assets/tabla.png"));
+        //main_image.setImage(imagenes.get(current));
 
-        imagenes.add(new Image("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/modelo.png?token=AI32UN2S5PMY4BDQMCWW7TC7AKI52"));
-        main_image.setImage(imagenes.get(current));
+        imagenes.add(new Image("/assets/modelo.png"));
+        //main_image.setImage(imagenes.get(current));
     }
 
     @Override

@@ -29,10 +29,10 @@ public class MefController implements Initializable {
     }
 
     public void siguiente() {
-        if (current == 3) {
+        if (current == imagenes.size() - 1) {
             cerrarVentana();
         }
-        if (current < 3) {
+        if (current < imagenes.size() - 1) {
             current += 1;
         }
         change();
@@ -79,7 +79,7 @@ public class MefController implements Initializable {
         titulos.add("Paso 1");
         tema.setText(titulos.get(current));
 
-        imagenes.add(new Image("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/paso1.png?token=AI32UN5NBL3ZIUKPSTXDNUC7ALIDO"));
+        imagenes.add(new Image("/assets/paso1.png"));
         main_image.setImage(imagenes.get(current));
 
         explicaciones.add("Luego, realizamos una interpolacion");
@@ -88,14 +88,34 @@ public class MefController implements Initializable {
         titulos.add("Paso 2");
         tema.setText(titulos.get(current));
 
-        imagenes.add(new Image("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/paso2.png?token=AI32UN5UDR754OPB236BSES7ALN2K"));
+        imagenes.add(new Image("/assets/paso2.png"));
         main_image.setImage(imagenes.get(current));
 
         //Paso 3
         titulos.add("Paso 3");
         tema.setText(titulos.get(current));
 
-        imagenes.add(new Image("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/paso3.png?token=AI32UNYRKU55RUEFDLJP5AS7ALQFE"));
+        imagenes.add(new Image("/assets/paso3.png"));
+        main_image.setImage(imagenes.get(current));
+
+        //Paso 4
+        titulos.add("Paso 4");
+        tema.setText(titulos.get(current));
+
+        imagenes.add(new Image("/assets/paso4.png"));
+        main_image.setImage(imagenes.get(current));
+
+        //Paso 5
+        titulos.add("Paso 5");
+        tema.setText(titulos.get(current));
+
+        imagenes.add(new Image("/assets/paso5-1.png"));
+        main_image.setImage(imagenes.get(current));
+
+        titulos.add("Paso 5");
+        tema.setText(titulos.get(current));
+
+        imagenes.add(new Image("/assets/paso5-2.png"));
         main_image.setImage(imagenes.get(current));
     }
 
