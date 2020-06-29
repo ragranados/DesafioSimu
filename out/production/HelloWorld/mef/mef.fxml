@@ -6,37 +6,29 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
-      prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="mef.MefController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mef.MefController">
   <children>
-    <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-              minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0">
+    <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0">
       <children>
-        <ImageView fx:id="main_image" fitHeight="384.0" fitWidth="603.0" pickOnBounds="true"
-                   preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER"
-                   GridPane.rowIndex="1" GridPane.valignment="CENTER"/>
-        <Button fx:id="anterior" onAction="#anterior" mnemonicParsing="false" text="Anterior"
-                GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER"/>
-        <Button fx:id="siguiente" onAction="#siguiente" mnemonicParsing="false" text="Siguiente"
-                GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2"
-                GridPane.valignment="CENTER"/>
-        <Label fx:id="tema" text="Dominicio a utilizar" GridPane.columnIndex="1" GridPane.halignment="CENTER"
-               GridPane.valignment="CENTER">
+        <ImageView fx:id="main_image" fitHeight="324.0" fitWidth="603.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BASELINE" />
+        <Button fx:id="anterior" mnemonicParsing="false" onAction="#anterior" text="Anterior" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <Button fx:id="siguiente" mnemonicParsing="false" onAction="#siguiente" text="Siguiente" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <Label fx:id="tema" text="Dominicio a utilizar" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
           <font>
-            <Font name="Arial Bold" size="23.0"/>
+            <Font name="Arial Bold" size="23.0" />
           </font>
         </Label>
+            <Label prefHeight="60.0" prefWidth="603.0" textAlignment="JUSTIFY" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS" />
       </children>
       <columnConstraints>
-        <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="100.0"/>
-        <ColumnConstraints hgrow="SOMETIMES" maxWidth="607.0" minWidth="10.0" prefWidth="607.0"/>
-        <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.0" minWidth="10.0" prefWidth="98.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="607.0" minWidth="10.0" prefWidth="607.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.0" minWidth="10.0" prefWidth="98.0" />
       </columnConstraints>
       <rowConstraints>
-        <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES"/>
-        <RowConstraints maxHeight="389.0" minHeight="10.0" prefHeight="387.0" vgrow="SOMETIMES"/>
-        <RowConstraints maxHeight="157.0" minHeight="0.0" prefHeight="111.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="92.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="430.0" minHeight="10.0" prefHeight="382.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="157.0" minHeight="0.0" prefHeight="126.0" vgrow="SOMETIMES" />
       </rowConstraints>
     </GridPane>
   </children>
