@@ -29,7 +29,9 @@ public class MefController implements Initializable {
     }
 
     public void siguiente() {
+
         if (current == imagenes.size() - 1) {
+            abrirComponents();
             cerrarVentana();
         }
         if (current < imagenes.size() - 1) {
@@ -45,6 +47,24 @@ public class MefController implements Initializable {
             fxmlLoader.setLocation(getClass().getResource("/recursos/recursos.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 900, 600);
             stage.setTitle("Recursos");
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        cerrarVentana();
+    }
+
+
+
+    public void abrirComponents(){
+        Stage stage = new Stage();
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(getClass().getResource("/componentes/componentes.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 900, 600);
+            stage.setTitle("Definicion de componentes");
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
@@ -86,37 +106,57 @@ public class MefController implements Initializable {
 
         //Paso 2
         titulos.add("Paso 2");
-        tema.setText(titulos.get(current));
+        //tema.setText(titulos.get(current));
 
         imagenes.add(new Image("/assets/paso2.png"));
-        main_image.setImage(imagenes.get(current));
+        // main_image.setImage(imagenes.get(current));
 
         //Paso 3
         titulos.add("Paso 3");
-        tema.setText(titulos.get(current));
+        //tema.setText(titulos.get(current));
 
         imagenes.add(new Image("/assets/paso3.png"));
-        main_image.setImage(imagenes.get(current));
+        //main_image.setImage(imagenes.get(current));
 
         //Paso 4
         titulos.add("Paso 4");
-        tema.setText(titulos.get(current));
+        //tema.setText(titulos.get(current));
 
         imagenes.add(new Image("/assets/paso4.png"));
-        main_image.setImage(imagenes.get(current));
+        //main_image.setImage(imagenes.get(current));
 
         //Paso 5
         titulos.add("Paso 5");
-        tema.setText(titulos.get(current));
+        //tema.setText(titulos.get(current));
 
         imagenes.add(new Image("/assets/paso5-1.png"));
-        main_image.setImage(imagenes.get(current));
+        //main_image.setImage(imagenes.get(current));
 
         titulos.add("Paso 5");
-        tema.setText(titulos.get(current));
+        //tema.setText(titulos.get(current));
 
         imagenes.add(new Image("/assets/paso5-2.png"));
-        main_image.setImage(imagenes.get(current));
+        //main_image.setImage(imagenes.get(current));
+
+        //Paso 6
+        titulos.add("Paso 6");
+        //tema.setText(titulos.get(current));
+
+        imagenes.add(new Image("/assets/paso6-1.png"));
+        //main_image.setImage(imagenes.get(current));
+
+        titulos.add("Paso 6");
+        //tema.setText(titulos.get(current));
+
+        imagenes.add(new Image("/assets/paso6-2.png"));
+        //main_image.setImage(imagenes.get(current));
+
+        titulos.add("forma fuerte");
+        //tema.setText(titulos.get(current));
+
+        imagenes.add(new Image("/assets/ff.png"));
+
+
     }
 
     @Override

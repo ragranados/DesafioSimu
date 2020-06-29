@@ -10,7 +10,7 @@
   <children>
     <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0">
       <children>
-        <ImageView fx:id="main_image" fitHeight="429.0" fitWidth="651.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BASELINE" />
+        <ImageView fx:id="main_image" fitHeight="459.0" fitWidth="651.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BASELINE" />
         <Button fx:id="anterior" mnemonicParsing="false" onAction="#anterior" text="Anterior" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
         <Button fx:id="siguiente" mnemonicParsing="false" onAction="#siguiente" text="Siguiente" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
         <Label fx:id="tema" text="Dominicio a utilizar" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
