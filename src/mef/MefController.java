@@ -91,6 +91,12 @@ public class MefController implements Initializable {
         imagenes.add(new Image("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/paso2.png?token=AI32UN5UDR754OPB236BSES7ALN2K"));
         main_image.setImage(imagenes.get(current));
 
+        //Paso 3
+        titulos.add("Paso 3");
+        tema.setText(titulos.get(current));
+
+        imagenes.add(new Image("https://raw.githubusercontent.com/ragranados/DesafioSimu/master/src/assets/paso3.png?token=AI32UNYRKU55RUEFDLJP5AS7ALQFE"));
+        main_image.setImage(imagenes.get(current));
     }
 
     @Override
