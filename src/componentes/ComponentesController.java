@@ -30,6 +30,7 @@ public class ComponentesController implements Initializable {
 
     public void siguiente() {
         if (current == imagenes.size() - 1) {
+            abrirVideo();
             cerrarVentana();
         }
         if (current < imagenes.size() - 1) {
@@ -43,6 +44,22 @@ public class ComponentesController implements Initializable {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("/recursos/recursos.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 900, 600);
+            stage.setTitle("Recursos");
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        cerrarVentana();
+    }
+
+    public void abrirVideo(){
+        Stage stage = new Stage();
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(getClass().getResource("/ensamblaje/ensamblaje.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 900, 600);
             stage.setTitle("Recursos");
             stage.setScene(scene);
@@ -108,6 +125,9 @@ public class ComponentesController implements Initializable {
 
         titulos.add("Definiendo matrices lado derecho");
         imagenes.add(new Image("/assets/comp9.png"));
+
+        /*titulos.add("Ensamblaje");
+        imagenes.add(new Image("/assets/ensablaje.gif"));*/
 
     }
 

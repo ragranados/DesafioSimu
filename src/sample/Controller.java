@@ -2,11 +2,13 @@ package sample;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class Controller {
+    public Button iniciar;
 
 
     public void empezar() {
@@ -21,6 +23,8 @@ public class Controller {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        iniciar.getScene().getWindow().hide();
     }
 
 
